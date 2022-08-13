@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,612 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+.background{
+  background:"";
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+}
+
+nav img {
+  width: 15%;
+  height: 7rem;
+  margin-top: -0.5rem;
+  position: relative;
+  left: 5%;
+}
+
+.links {
+  display: flex;
+  width: 75%;
+  margin-left: 12rem;
+  margin-top: 2.4rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+  margin-right: 1rem;
+  font-weight: 700;
+}
+
+.home {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.home-text {
+  width: 35%;
+  margin-top: 20%;
+}
+
+.home-text h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 4rem;
+  margin-bottom: 3rem;
+}
+
+span {
+  color: rgb(31, 122, 220);
+}
+
+.home-text p {
+  margin-bottom: 2rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+.home-text label {
+  position: relative;
+}
+
+label input {
+  width: 28rem;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: 2rem;
+  border: none;
+  font-size: large;
+  box-shadow: rgb(232, 232, 232) 0 0 3px 2px;
+}
+
+label button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 4rem;
+  width: 8rem;
+  transform: translateY(-35%);
+  border: none;
+  border-radius: 2rem;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+}
+
+.imp {
+  margin-top: 0.7rem;
+  padding-left: 1rem;
+  color: rgb(117, 116, 116);
+}
+
+.home-img {
+  margin-top: 13%;
+}
+
+.home-img img {
+  width: 95%;
+  margin: auto;
+  margin-left: 8%;
+}
+
+.users {
+  background-color: rgb(247, 245, 245);
+  margin-bottom: 5rem;
+}
+
+.desc {
+  width: 40%;
+  margin: auto;
+  font-size: 1.9rem;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.icons {
+  width: 90%;
+  margin: auto;
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: rgb(152, 152, 152);
+}
+
+.icons i {
+  margin: 0 4rem;
+}
+
+.how-to {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  margin: auto;
+  padding-bottom: 8rem;
+}
+
+.one {
+  display: flex;
+  justify-content: space-between;
+  width: 14rem;
+}
+
+.one .num {
+  background-color: rgb(31, 122, 220);
+  color: white;
+  height: 1.3rem;
+  width: 3rem;
+  border-radius: 3.3rem;
+  font-size: smaller;
+  text-align: center;
+}
+
+.rule h4 {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.one p {
+  margin-left: 1rem;
+  font-size: small;
+  line-height: 1.5rem;
+}
+
+.enthead {
+  position: absolute;
+  top: 30%;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
+.enthead h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  width: 40%;
+  margin: auto;
+  padding-bottom: 2rem;
+  word-spacing: -8px;
+}
+
+.enthead p {
+  width: 40%;
+  margin: auto;
+  padding-bottom: 1rem;
+  line-height: 1.8rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.enthead button {
+  height: 3.5rem;
+  width: 11rem;
+  border-radius: 2rem;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 0.9rem;
+}
+
+.banner {
+  height: 45vh;
+  background-color: black;
+  transform: translateY(220%);
+  color: white;
+  padding: 4rem 9rem;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.banner p {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.banner .ban-icon {
+  width: 100%;
+  margin: auto;
+  font-size: 4rem;
+  text-align: center;
+  display: flex;
+}
+
+.ban-icon i {
+  margin: 0 5rem;
+}
+
+.cards {
+  transform: translateY(140%);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem 5rem;
+}
+
+.cards .card {
+  height: 25rem;
+  width: 15rem;
+  border-radius: 2rem;
+  box-shadow: rgb(232, 232, 232) 0 0 4px 3px;
+  padding: 2rem 0.5rem;
+}
+
+.card h4 {
+  margin-bottom: 1rem;
+}
+
+.card img {
+  margin-left: 20%;
+  margin-bottom: 1rem;
+}
+
+.cards p {
+  line-height: 1.5rem;
+}
+
+.ca-but {
+  width: 9%;
+  margin: auto;
+  transform: translateY(1370%);
+  margin-bottom: 3rem;
+}
+
+.ca-but button {
+  height: 3rem;
+  width: 8rem;
+  border-radius: 2rem;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 0.9rem;
+}
+
+.foot {
+  transform: translateY(220%);
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 3rem;
+}
+
+.first {
+  width: 21rem;
+}
+
+.first h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+.first p {
+  margin-bottom: 4rem;
+  width: 100%;
+}
+
+.first select {
+  width: 21rem;
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: rgb(163, 163, 163) 0 0 6px 1px;
+}
+
+.easy {
+  color: rgb(38, 47, 90);
+}
+
+.second h3 {
+  margin-bottom: 1rem;
+  color: rgb(38, 47, 90);
+  font-weight: 900;
+}
+
+.second p {
+  font-weight: 100;
+  line-height: 1.5rem;
+  color: rgb(38, 47, 90);
+  width: 100%;
+}
+
+.team {
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(30%);
+  width: 100%;
+  padding: 0 7rem;
+}
+
+.team-cont {
+  width: 40%;
+}
+
+.team-cont h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 2.8rem 0;
+}
+
+.team-cont p {
+  font-size: 1.2rem;
+  font-weight: 100;
+  line-height: 2rem;
+  color: rgb(38, 47, 90);
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.team-but {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.team-but .one {
+  width: 11rem;
+  height: 3.5rem;
+  background-color: rgb(31, 122, 220);
+  border: none;
+  border-radius: 2rem;
+}
+
+.team-but .one p {
+  font-size: 0.9rem;
+  font-weight: 900;
+  color: white;
+  margin-left: 2.2rem;
+  margin-top: 0.7rem;
+}
+
+.team-but .two {
+  width: 11rem;
+  height: 3.5rem;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+.team-img {
+  width: 57%;
+}
+
+.team-img img {
+  width: 100%;
+  margin: auto;
+}
+
+.lg-text {
+  transform: translateY(280%);
+  width: 70%;
+  margin: auto;
+}
+
+.lg-text p {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: rgb(38, 47, 90);
+  text-align: center;
+}
+
+.team2 {
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(50%);
+}
+
+.team-img2 {
+  width: 50%;
+}
+
+.team-img2 img {
+  width: 100%;
+  margin: auto;
+  height: 35rem;
+}
+
+.lg-text2 {
+  width: 50%;
+  padding-top: 6rem;
+}
+
+.lg-text2 h4,
+h1,
+p {
+  margin-bottom: 2rem;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lg-text2 p {
+  line-height: 2rem;
+}
+
+.solu {
+  transform: translateY(150%);
+}
+
+.solu h4 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.solu h1 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.solu h3 {
+  margin: 1.5rem 1rem;
+}
+
+.solu p {
+  width: 65%;
+  margin: 2rem 1rem;
+  line-height: 1.5rem;
+}
+
+.solu-cards {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: auto;
+}
+
+.solu-card {
+  width: 100%;
+  margin: auto;
+  height: 5rem;
+}
+
+.solu-card img {
+  width: 95%;
+  margin: auto;
+}
+
+.learn {
+  color: rgb(31, 122, 220);
+  font-weight: 700;
+}
+
+.indi-but button {
+  width: 11rem;
+  height: 3.8rem;
+  background-color: black;
+  border: none;
+  border-radius: 2rem;
+}
+
+.indi-but button p {
+  color: white;
+  margin: auto auto;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.individuals {
+  display: flex;
+  justify-content: space space-between;
+  transform: translateY(80%);
+  width: 80%;
+  margin: auto;
+}
+
+.indi-img {
+  width: 100%;
+  margin: auto;
+}
+
+.individuals2 {
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(150%);
+  width: 80%;
+  margin: auto;
+}
+
+.individuals2 .indi-text {
+  width: 100%;
+  margin: auto;
+  margin-right: 6rem;
+}
+
+.indi-img2 {
+  width: 100%;
+  margin: auto;
+}
+
+.indi-img2 img {
+  width: 100%;
+  margin: auto;
+}
+
+.indi-text {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.indi-text h5,
+h2 {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.indi-text h2 {
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+}
+
+.indi-text p {
+  margin-bottom: 2rem;
+  width: 100%;
+  line-height: 2rem;
+}
+
+.indi-text h6 {
+  font-size: 0.9rem;
+}
+
+.indi-ban {
+  background-color: rgb(23, 60, 241);
+  color: white;
+  transform: translateY(200%);
+  /* height: 50vh; */
+  padding: 4rem 4rem;
+}
+
+.indi-ban p {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.indi-ban button {
+  width: 11rem;
+  height: 3.5rem;
+  background-color: white;
+  border: none;
+  border-radius: 3rem;
+  transform: translateX(304%);
+  font-weight: 800;
+}
+.logo{
+  width: 2000px;
+
+
 }
